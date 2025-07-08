@@ -14,7 +14,7 @@
 	</head>
     <body style="margin : 0px; overflow: hidden;">
 	<div class="buttons">
- 	 <button id="boton1" class="button1" style="display: none;">click</button>
+ 	 <button id="boton1" class="button1" style="display: none;" onclick="goURL()">click</button>
 	</div>
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
@@ -40,9 +40,10 @@ marker.addEventListener('markerLost', function() {
     // Hide the button
     button.style.display = 'none';
   });
-button.addEventListener('click', function() {
-    // Handle button click event
-    alert('Button clicked!');
-  });    
+
+function goURL()
+{
+ 	window.location.href="https://www.youtube.com/@Mexicatronica/featured";
+}
   </script>
 </html>
