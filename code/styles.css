@@ -10,17 +10,17 @@
       z-index: 10;
     }
 
-    #button1 {
+    .button1 {
       position: fixed;
       z-index: 10;
       top: 10px;
       margin-left: 10px;
       display:none;
-      padding: 10px;
+      padding: 0.25em;
       border-radius: 4px;
       border: none;
       background: white;
       color: black;
-      width: 15px;
-      height: 15px;
+      width: 4em;
+      height: 2em;
     }
