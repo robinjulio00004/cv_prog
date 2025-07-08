@@ -10,7 +10,6 @@
     	<!--<script src="./code/animation-mixer.js"></script>-->
 	<script src="./code/gesture-detector.js"></script>
     	<script src="./code/gesture-handler.js"></script>
-	<script src="./code/mi_javascript.js"></script>
 	<link rel="stylesheet" href="./code/styles.css">
 	</head>
     <body style="margin : 0px; overflow: hidden;">
@@ -28,4 +27,23 @@
 	  <a-entity camera></a-entity>      
         </a-scene>
     </body>
+	<script>
+const marker = document.querySelector('#marcador');
+const button = document.querySelector('#boton1');
+
+marker.addEventListener('markerFound', function() {
+    // Show the button
+    button.style.display = 'block';
+  });
+
+marker.addEventListener('markerLost', function() {
+    // Hide the button
+    button.style.display = 'none';
+  });
+
+function goURL()
+{
+	window.location.href="https://www.linkedin.com/in/robinjulio004";
+}
+	</script>
 </html>
