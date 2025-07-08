@@ -16,6 +16,10 @@
 	<div class="buttons">
  	 <button id="boton1" type="button" class="button1" style="display: none;" onclick="goURL1()">LinkedIn</button>
 	 <button id="boton2" type="button" class="button2" style="display: none;" onclick="goURL2()">Youtube</button>
+	 <button id="boton3" type="button" class="button3" style="display: none;" onclick="goURL3()">Github</button>
+	 <button id="boton4" type="button" class="button4" style="display: none;" onclick="goURL4()">Dirección</button>
+	 <button id="boton5" type="button" class="button5" style="display: none;" onclick="goURL5()">Correo</button>
+	 <button id="boton6" type="button" class="button6" style="display: none;" onclick="goURL6()">Celular</button>
 	</div>
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
@@ -32,15 +36,27 @@
 const marker = document.querySelector('#marcador');
 const btn1 = document.querySelector('#boton1');
 const btn2 = document.querySelector('#boton2');
+const btn3 = document.querySelector('#boton3');
+const btn4 = document.querySelector('#boton4');
+const btn5 = document.querySelector('#boton5');
+const btn6 = document.querySelector('#boton6');
 
 marker.addEventListener('markerFound', function() {
     btn1.style.display = 'block';
     btn2.style.display = 'block';
+    btn3.style.display = 'block';
+    btn4.style.display = 'block';
+    btn5.style.display = 'block';
+    btn6.style.display = 'block';
   });
 
 marker.addEventListener('markerLost', function() {
     btn1.style.display = 'none';
     btn2.style.display = 'none';
+    btn3.style.display = 'none';
+    btn4.style.display = 'none';
+    btn5.style.display = 'none';
+    btn6.style.display = 'none';
   });
 
 function goURL1()
@@ -50,6 +66,22 @@ function goURL1()
 function goURL2()
 {
 	window.location.href="https://www.youtube.com/@Mexicatronica/featured";
+}
+function goURL3()
+{
+	window.location.href="https://github.com/robinjulio00004";
+}
+function goURL4()
+{
+	window.location.href="https://maps.app.goo.gl/vvrrsk12Bj7LR9GA6";
+}
+function goURL5()
+{
+	window.location.href="https://mail.google.com/mail/?view=cm&fs=1&to=robinjulio004@gmail.com&su=SUBJECT";
+}
+function goURL6()
+{
+	window.location.href="https://wa.me/525588264345?text=mensaje%20sobre%20vacante%20laboral";
 }
 	</script>
 </html>
