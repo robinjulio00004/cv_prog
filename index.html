@@ -25,8 +25,9 @@
   vr-mode-ui="enabled: false" gesture-detector id="scene">
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
-		   <!--<audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>-->
-	       <a-entity sound="src:./model/prueba.mp3; autoplay:false; loop:false" visible="false" id="audio" class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
+		   <audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>
+		   <!--sound="src:./model/prueba.mp3; autoplay:false; loop:false" visible="false" id="audio"-->
+	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
                </a-entity>
 	   </a-marker> 
