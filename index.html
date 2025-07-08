@@ -20,12 +20,12 @@
 	 <button id="boton4" type="button" class="button4" style="display: none;" onclick="goURL4()">Dirección</button>
 	 <button id="boton5" type="button" class="button5" style="display: none;" onclick="goURL5()">Correo</button>
 	 <button id="boton6" type="button" class="button6" style="display: none;" onclick="goURL6()">Celular</button>
+	 <audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>
 	</div>
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
-		   <audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>
 		   <!--sound="src:./model/prueba.mp3; autoplay:false; loop:false" visible="false" id="audio"-->
 	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
