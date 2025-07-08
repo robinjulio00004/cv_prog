@@ -28,15 +28,15 @@
         </a-scene>
     </body>
 	<script>
-    window.onload = function () {
-      document
-        .querySelector(".say-hi-button")
-        .addEventListener("click", function () {
-          // here you can change also a-scene or a-entity properties, like
-          // changing your 3D model source, size, position and so on
-          // or you can just open links, trigger actions...
+const btn1=document.querySelector('#button1');
+AFRAME.registerComponent('markerhandler', {
+    init: function () {
+      this.el.sceneEl.addEventListener('markerFound', () => {
+	btn1.style.display = 'block';
+      document.querySelector("#button1").addEventListener("click", function () {
           alert("Hi there!");
-        });
-    };
+      })
+    }
+  });
   </script>
 </html>
