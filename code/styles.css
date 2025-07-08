@@ -14,9 +14,9 @@
       text-align: center;
       padding: 0.25em;
       border-radius: 4px;
-      border: none;
+      border: 1px solid #3079ed;
       background: white;
-      color: red;
+      color: #d93025;
       width: 4em;
       height: 2em;
     }
