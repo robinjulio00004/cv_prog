@@ -10,13 +10,24 @@
       z-index: 10;
     }
 
-    .button1,.button2 {
+    .button1{
       text-align: center;
       padding: 0.25em;
       border-radius: 4px;
       border: 1px solid white;
       background: rgba(128,128,128,0);
       color: blue;
+      width: 5em;
+      height: 2em;
+    }
+
+    .button2{
+      text-align: center;
+      padding: 0.25em;
+      border-radius: 4px;
+      border: 1px solid white;
+      background: rgba(128,128,128,0);
+      color: red;
       width: 5em;
       height: 2em;
     }
