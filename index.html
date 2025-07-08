@@ -25,7 +25,8 @@
   vr-mode-ui="enabled: false" gesture-detector id="scene">
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
-	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
+		   <!--<audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>-->
+	       <a-entity sound="src:./model/prueba.mp3; autoplay:false; loop:false" visible="false" id="audio" class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
                </a-entity>
 	   </a-marker> 
@@ -40,6 +41,7 @@ const btn3 = document.querySelector('#boton3');
 const btn4 = document.querySelector('#boton4');
 const btn5 = document.querySelector('#boton5');
 const btn6 = document.querySelector('#boton6');
+const mi_audio=document.querySelector('#audio');
 
 marker.addEventListener('markerFound', function() {
     btn1.style.display = 'block';
@@ -48,6 +50,7 @@ marker.addEventListener('markerFound', function() {
     btn4.style.display = 'block';
     btn5.style.display = 'block';
     btn6.style.display = 'block';
+	mi_audio.play();
   });
 
 marker.addEventListener('markerLost', function() {
@@ -57,6 +60,7 @@ marker.addEventListener('markerLost', function() {
     btn4.style.display = 'none';
     btn5.style.display = 'none';
     btn6.style.display = 'none';
+	mi_audio.pause();
   });
 
 function goURL1()
