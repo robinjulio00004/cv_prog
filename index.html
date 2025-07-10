@@ -30,9 +30,9 @@
 	<a-assets>
     <video id="video" autoplay loop="true" src="./model/hud-circle-user-interface.mp4"></video>
   	</a-assets>
-	<a-video src="#video" width="256" height="256" position="0 0 -20"></a-video>
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
+		<a-video src="#video" width="25" height="25" position="0 0 -20"></a-video>
 		   <!--sound="src:./model/prueba.mp3; autoplay:false; loop:false" visible="false" id="audio"-->
 	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
