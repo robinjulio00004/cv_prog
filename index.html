@@ -20,8 +20,9 @@
 	 <button id="boton4" type="button" class="button4" style="display: none;" onclick="goURL4()">Dirección</button>
 	 <button id="boton5" type="button" class="button5" style="display: none;" onclick="goURL5()">Correo</button>
 	 <button id="boton6" type="button" class="button6" style="display: none;" onclick="goURL6()">Celular</button>
-	 <audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>
 	</div>
+	<audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>
+	<video id="video" src="./model/hud-circle-user-interface.mp4" type="video/mp4" preload="auto" autoplay="false" controls="false"></video>
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
@@ -43,6 +44,7 @@ const btn4 = document.querySelector('#boton4');
 const btn5 = document.querySelector('#boton5');
 const btn6 = document.querySelector('#boton6');
 const mi_audio=document.querySelector('#audio');
+const mi_video=document.querySelector('#video');
 
 marker.addEventListener('markerFound', function() {
     btn1.style.display = 'block';
@@ -52,6 +54,7 @@ marker.addEventListener('markerFound', function() {
     btn5.style.display = 'block';
     btn6.style.display = 'block';
 	mi_audio.play();
+	mi_video.play();
   });
 
 marker.addEventListener('markerLost', function() {
@@ -62,6 +65,7 @@ marker.addEventListener('markerLost', function() {
     btn5.style.display = 'none';
     btn6.style.display = 'none';
 	mi_audio.pause();
+	mi_video.pause();
   });
 
 function goURL1()
