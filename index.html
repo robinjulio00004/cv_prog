@@ -23,7 +23,6 @@
 	</div>
 	<div>
 	<audio id="audio" src="./model/prueba.mp3" preload="auto" autoplay="false"></audio>
-	<!--<video id="video" type="video/mp4" style="display:none;" width="512px" height="512px" src="./model/hud-circle-user-interface.mp4" preload="auto" loop="true" autoplay="false" controls="false"></video>-->
 	</div>
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
@@ -32,11 +31,9 @@
   	</a-assets>
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
-		
-		   <!--sound="src:./model/prueba.mp3; autoplay:false; loop:false" visible="false" id="audio"-->
 	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
-		<a-video id="video" src="#evideo" width="3" height="7" rotation="-90 0 0" position="0 0 -1" scale="0.2 0.2 0"></a-video>
+		<a-video id="video" src="#evideo" width="3" height="7" rotation="-90 0 0" position="2 0 -1" scale="0.2 0.2 0"></a-video>
                </a-entity>
 	   </a-marker> 
 	  <a-entity camera></a-entity>      
