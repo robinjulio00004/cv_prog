@@ -48,8 +48,8 @@ const btn3 = document.querySelector('#boton3');
 const btn4 = document.querySelector('#boton4');
 const btn5 = document.querySelector('#boton5');
 const btn6 = document.querySelector('#boton6');
-const mi_audio=document.querySelector('#audio');
-const mi_video=document.querySelector('#evideo');
+const ado=document.querySelector('#audio');
+const vdo=document.querySelector('#evideo');
 
 marker.addEventListener('markerFound', function() {
     btn1.style.display = 'block';
@@ -58,9 +58,9 @@ marker.addEventListener('markerFound', function() {
     btn4.style.display = 'block';
     btn5.style.display = 'block';
     btn6.style.display = 'block';
-    mi_video.style.display = 'block';
-	mi_audio.play();
-	mi_video.play();
+     vdo.style.display = 'block';
+	ado.play();
+	vdo.play();
   });
 
 marker.addEventListener('markerLost', function() {
@@ -70,9 +70,9 @@ marker.addEventListener('markerLost', function() {
     btn4.style.display = 'none';
     btn5.style.display = 'none';
     btn6.style.display = 'none';
-    mi_video.style.display = 'none';
-	mi_audio.pause();
-	mi_video.pause();
+     vdo.style.display = 'none';
+	ado.pause();
+	vdo.pause();
   });
 
 function goURL1()
