@@ -28,13 +28,13 @@
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
 	<a-assets>
-    <video id="evideo" type="video/mp4" preload="auto" autoplay="false" loop="true" src="./model/hud-circle-user-interface.mp4" crossorigin="anonymous" webkit-playsinline playsinline></video>
+    <video id="evideo" type="video/mp4" preload="auto" autoplay="false" loop="true" src="./model/hud-circle-user-interface.mp4" webkit-playsinline playsinline></video>
   	</a-assets>
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
 	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
-		<a-video id="video" src="#evideo" width="3" height="5" rotation="-90 0 0" position="0 0 -0.5" scale="0.2 0.2 0"></a-video>
+		<a-video id="video" src="#evideo" width="3" height="4" rotation="-90 0 0" position="0 0 -0.05" scale="0.2 0.2 0"></a-video>
                </a-entity>
 	   </a-marker> 
 	  <a-entity camera></a-entity>      
