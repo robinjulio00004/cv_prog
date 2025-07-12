@@ -29,7 +29,7 @@
         <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false" gesture-detector id="scene">
 	<a-assets>
-    <video id="evideo" type="video/webm" preload="auto" autoplay="false" loop="true" src="./model/hologramasvp8_webm.webm" webkit-playsinline playsinline></video>
+    <video id="evideo" type="video/webm" preload="auto" autoplay="false" loop="true" src="./model/hologramasvp8_webm.webm" webkit-playsinline playsinline crossorigin="anonymous"></video>
   	</a-assets>
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
