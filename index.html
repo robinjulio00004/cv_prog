@@ -30,14 +30,14 @@
   vr-mode-ui="enabled: false" gesture-detector id="scene">
 	<a-assets>
     <video id="evideo" type="video/webm" preload="auto" autoplay="false" loop="true" src="./model/hologramas.webm" webkit-playsinline playsinline crossorigin="anonymous"></video>
-	<img id="eimagen" src="./model/ecogarden.png">
+	<!--<img id="eimagen" src="./model/ecogarden.png">-->
   	</a-assets>
            <a-marker type="pattern" url="./target/open_file.patt" raycaster="objects: .clickable"
         	emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marcador">
 	       <a-entity class="clickable" gesture-handler="minScale: 1.5; maxScale: 8"
 	    	gltf-model="./model/mi_cv_prog.glb" rotation="0 0 0" position="0 0 0" scale="1 1 1" animation-mixer="clip: *; timeScale:3;">
-		<a-entity material="shader: transparent-video; src: #evideo;" geometry="primitive: plane; width: 3; height: 4.70" position="0 0.05 0" rotation="-90 0 0" scale="0.25 0.22 0.25" transparent="true"> 
-			<a-image position="0 0.025 0" rotation="-90 0 0" scale="0.3 0.3 0.3" width="3" height="4.70" material="src: #eimagen;></a-image>
+		<a-entity material="shader: transparent-video; src: #evideo;" geometry="primitive: plane; width: 3; height: 4.70" position="0 0.05 0" rotation="-90 0 0" scale="0.25 0.22 0.25"> 
+			<!--<a-image position="0 0.025 0" rotation="-90 0 0" scale="0.3 0.3 0.3" width="3" height="4.70" material="src: #eimagen;></a-image>-->
 		</a-entity>		       
                </a-entity>
 	   </a-marker> 
